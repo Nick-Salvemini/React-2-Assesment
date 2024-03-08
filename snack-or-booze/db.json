@@ -27,6 +27,14 @@
       "description": "Crisp!",
       "recipe": "Open can.",
       "serve": "Immediately."
+    },
+    {
+      "type": "drinks",
+      "name": "Shirley Temple",
+      "description": "A delicious cherry drink",
+      "recipe": "Mix Sprite or Ginger Ale with a generous splash of grenadine",
+      "serve": "Serve in a tall glass garnished with two marashino cherries",
+      "id": "NrQE-iM"
     }
   ],
   "snacks": [
