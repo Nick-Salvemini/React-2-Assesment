@@ -4,7 +4,7 @@ import "./App.css";
 import Home from "./Home";
 import SnackOrBoozeApi from "./Api";
 import NavBar from "./NavBar";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Menu from "./Menu";
 import Item from "./Item";
 import AddItemForm from "./AddItemForm";
@@ -83,7 +83,10 @@ function App() {
             <Route path="/add-item">
               <AddItemForm addItem={addItem} />
             </Route>
-            <Route>
+            {/* Added redirect for non-existent snacks or drinks */}
+            <Redirect from="/snacks/*" to="/snacks" />
+            <Redirect from="/drinks/*" to="/drinks" />
+            <Route path="*">
               <p>Hmmm. I can't seem to find what you want.</p>
             </Route>
           </Switch>
